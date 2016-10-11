@@ -42,6 +42,5 @@ INSERT INTO syntax_practice (username, city, transactions_completed, transaction
 
 --The bank is losing money in Miami and Phoenix and needs to unload low transaction customers: Delete users that reside in miami OR phoenix and have completed fewer than 5 transactions.
 DELETE FROM syntax_practice
-WHERE city = 'phoenix'
-OR city = 'miami'
-OR transactions_completed < 5;
+WHERE city = 'phoenix' AND transactions_completed < 5
+OR city = 'miami'AND transactions_completed < 5;
